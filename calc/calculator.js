@@ -11,7 +11,10 @@ function sketch() {
     fa2 = select('#fa2');
     term1 = select('#term1');
     term2 = select('#term2');
-    answer = select('#answer')
-    result = httpGet(`calculator.php?fa1=${fa1.value()}&fa2=${fa2.value()}&term1=${term1.value()}&term2=${term2.value()}`)
-    answer.value(result)
+    answer = select('#answer');
+    button = select('#submit');
+    button.mouseClicked(_ => {
+        result = httpGet(`calculator.php?fa1=${fa1.value()}&fa2=${fa2.value()}&term1=${term1.value()}&term2=${term2.value()}`)
+        answer.value(result)
+    })
 }
