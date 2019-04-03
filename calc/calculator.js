@@ -14,7 +14,7 @@ function setup() {
     answer = select('#answer');
     button = select('#submit');
     button.mousePressed(_ => {
-        httpGet(`calculator.php?fa1=${fa1.value()}&fa2=${fa2.value()}&term1=${term1.value()}&term2=${term2.value()}`, res => answer.value(result))
+        httpGet(`calculator.php?fa1=${fa1.value()}&fa2=${fa2.value()}&term1=${term1.value()}&term2=${term2.value()}`, res => answer.value(res))
 
     })
 }
