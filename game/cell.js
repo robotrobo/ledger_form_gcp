@@ -11,13 +11,13 @@ class cell {
     }
     // functions to check which player is playing
     play1() {
-        this.col = color(255, 0, 0);
+        this.col = color(0, 255, 0);
         this.own = 1;
         turn = 2;
 
     }
     play2() {
-        this.col = color(0, 255, 255);
+        this.col = color(0, 0, 255);
         this.own = 2;
         turn = 1;
     }
