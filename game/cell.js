@@ -14,7 +14,6 @@ class cell {
         this.col = color(0, 255, 0);
         this.own = 1;
         turn = 2;
-
     }
     play2() {
         this.col = color(0, 0, 255);

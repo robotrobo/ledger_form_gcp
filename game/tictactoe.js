@@ -18,16 +18,16 @@ function updateBoard(mouseX, mouseY) {
             // console.log(mouseX, mouseY)
             if (mouseX >= x + off && mouseX <= x + off + 100 && mouseY >= y + off && mouseY <= y + off + 100) {
                 // console.log(i, j);
-
-                game[i][j].pressed = true;
-                if (turn == 1) {
-                    game[i][j].play1();
-                } else if (turn == 2) {
-                    game[i][j].play2();
+                if (!game[i][j].pressed) {
+                    game[i][j].pressed = true;
+                    if (turn == 1) {
+                        game[i][j].play1();
+                    } else if (turn == 2) {
+                        game[i][j].play2();
+                    }
+                    console.log(game[i][j].own)
+                    break;
                 }
-                console.log(game[i][j].own)
-                break;
-
             }
         }
     }
