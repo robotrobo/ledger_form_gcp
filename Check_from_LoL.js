@@ -15,7 +15,7 @@ function Check_from_LoL(Data) {
             alert("Sorry wrong username or pass, please retry");
             window.location.href = "index.php";
         } else {
-            let php_url = `${window.location.origin}/make_request.php?name=${encodeURIComponent(comp_test)}&start=20080401&end=20190331`;
+            let php_url = `${window.location.origin}/make_request.php?name=${encodeURIComponent(comp_test)}`;
             console.log("trying php now1 for" + comp_test);
             httpGet(php_url, (data) => {
                 // debug = data;
