@@ -9,8 +9,6 @@ $r =  shell_exec('py.exe C:\inetpub\wwwroot\import_LoL.py');
 <html lang="eng">
 
 <head>
-  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet"> -->
-
   <center>
     <h1>
       Anish Foods Pvt Ltd
@@ -18,8 +16,6 @@ $r =  shell_exec('py.exe C:\inetpub\wwwroot\import_LoL.py');
   </center>
 
 </head>
-
-<!-- <title>p5.js example</title> -->
 
 <style>
 th{
@@ -63,17 +59,6 @@ footer {
 <div id="loading">
   <img id="loading-image" src="loader.gif" alt="Loading..." />
 </div>
- <!-- <scr-ipt type=text/javascript>
-      // let name_comp;
-      // function make_php_request(comp_name){
-      //   // name_comp=comp_name  ;
-      //   console.log('doing this');
-        
-        // cur_ledger = ``;
-        // console.log(cur_ledger);
-        // display(cur_ledger.split(/\n/),comp_name);
-      }
-  </script>-->
   <script type=text/javascript>
   let LoL_data = `<?php echo $r ?>`;
   // console.log(LoL_data);
