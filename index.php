@@ -3,7 +3,7 @@
  
 <!-- Calls a python file in my computer to call the LoL ledger-->
 <?php
-$r =  shell_exec('py.exe C:\inetpub\wwwroot\import_LoL.py');
+$r =  shell_exec('python3 /var/www/html/import_LoL.py');
 
 ?>
 <html lang="eng">

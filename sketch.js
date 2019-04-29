@@ -7,9 +7,7 @@ let LoL;
 
 function setup() {
   info_re = document.getElementById('info_time');
-  // document.cookie = "name=";
   info_re = new p5.Element(info_re);
-  //Creating inputs ,the Submit button,and the reset button;
   lab1 = createElement("label", "Enter username:");
   lab1.position(0, info_re.position().y + info_re.height + 10);
 
@@ -39,7 +37,7 @@ function setup() {
   sub_button.mousePressed(_ => {
     document.getElementById("loading").style.display = "block";
     sub_button.addClass("btn-success");
-    sub_button.attribute("disabled","true");
+    sub_button.attribute("disabled", "true");
     Check_from_LoL(LoL_data)
   });
 
@@ -47,7 +45,7 @@ function setup() {
   reset_button = createButton("Reset");
   reset_button.attribute("type", "btn");
   reset_button.class("btn .btn-primary");
-  reset_button.position(windowWidth / 2+ 100 , pass_in.position().y + 100);
+  reset_button.position(windowWidth / 2 + 100, pass_in.position().y + 100);
   reset_button.mousePressed(() => {
     document.location.reload(true)
   });
@@ -55,11 +53,11 @@ function setup() {
   register_button = createButton("Register");
   register_button.attribute("type", "btn");
   register_button.class("btn .btn-primary");
-  register_button.position(windowWidth / 2 -100, reset_button.position().y + 50);
+  register_button.position(windowWidth / 2 - 100, reset_button.position().y + 50);
   register_button.mousePressed(() => {
     window.location = "register.php";
   });
-  
+
   admin_button = createButton("Admin");
   admin_button.attribute("type", "btn");
   admin_button.class("btn .btn-primary");

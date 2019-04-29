@@ -1,6 +1,6 @@
 <?php
 $name = $_GET('name'); 
-$string = ('py.exe C:\inetpub\wwwroot\import_ledger.py '.escapeshellarg($name));
+$string = ('python3 /var/www/html/import_Ledger.py '.escapeshellarg($name));
 $ans = shell_exec($string);
 echo $ans;
 ?>

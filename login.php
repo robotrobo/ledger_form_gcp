@@ -4,10 +4,10 @@ $username = "root";
 $password = "9575024567";
 $dbname = "login_info";
 $table = "users";
-
+error_reporting(E_ALL);
 //get params
 $user = $_GET["user"];
-$hash = $_GET["hash"];
+// $hash = $_GET["hash"];
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -17,6 +17,7 @@ if ($conn->connect_error) {
 }
 
 $sql = "SELECT comp FROM $table where user = '$user' and hash ='$hash'";
+
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
