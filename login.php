@@ -7,7 +7,7 @@ $table = "users";
 error_reporting(E_ALL);
 //get params
 $user = $_GET["user"];
-// $hash = $_GET["hash"];
+$hash = $_GET["hash"];
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
